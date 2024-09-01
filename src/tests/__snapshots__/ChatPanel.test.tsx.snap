@@ -1,0 +1,338 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChatPanel > renders correctly with children 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dpBQxM ldrxcc"
+  >
+    <header
+      class="sc-gtLWhw btppQI"
+    >
+      <div
+        class="sc-egkSDF dhxUgK"
+      >
+        <img
+          alt="chatbot-male"
+          class="sc-ghWlax ecyHSa"
+          src="/chatbot-male.png"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-9pa1kj-MuiTypography-root"
+      >
+        React Chatbot
+      </p>
+      <button
+        aria-label="close"
+        class="MuiButtonBase-root  MuiIconButton-root MuiIconButton-sizeMedium  sc-fAUdSK gawLYI css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  css-20bmp1-MuiSvgIcon-root"
+          data-testid="CloseIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </header>
+    <div
+      class="sc-ixGGxD cgbYZL"
+    >
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Welcome to the chatbot! How can I help you today?
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu kXIfiA"
+        role="user"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="person-female"
+            class="sc-ghWlax ecyHSa"
+            src="/person.png"
+          />
+        </div>
+        <div
+          bgcolor="#2ecc71"
+          class="sc-khLCKb fiwGCz"
+          maxwidth="70%"
+          role="user"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Hi! I need some help with my order. I tried checking the status online, but I couldn't find the information I was looking for. Could you please assist me with finding the details?
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Sure, I can assist you with that. Can you please provide your order number so I can pull up the relevant details for you? Once I have your order number, I can check the status, delivery date, and any other information you might need regarding your order.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu kXIfiA"
+        role="user"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="person-female"
+            class="sc-ghWlax ecyHSa"
+            src="/person.png"
+          />
+        </div>
+        <div
+          bgcolor="#2ecc71"
+          class="sc-khLCKb fiwGCz"
+          maxwidth="70%"
+          role="user"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            My order number is 123456.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Thank you! Let me check the details for your order. It will just take a moment. While I'm looking into this, is there anything specific you're concerned about with your order, like delivery timing or the condition of the items? Your input will help me assist you better.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            I see that your order is scheduled for delivery tomorrow. Everything seems to be on track. The package is currently in transit and should arrive by the end of the day tomorrow. Is there anything else you need help with, or is there anything else you would like to change about your order?
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu kXIfiA"
+        role="user"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="person-female"
+            class="sc-ghWlax ecyHSa"
+            src="/person.png"
+          />
+        </div>
+        <div
+          bgcolor="#2ecc71"
+          class="sc-khLCKb fiwGCz"
+          maxwidth="70%"
+          role="user"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Can I reschedule the delivery?
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Yes, you can reschedule the delivery. Would you like me to do that for you now, or would you prefer to choose a specific date and time that works best for you? Just let me know what your preference is, and I'll make sure the delivery is adjusted accordingly.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu kXIfiA"
+        role="user"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="person-female"
+            class="sc-ghWlax ecyHSa"
+            src="/person.png"
+          />
+        </div>
+        <div
+          bgcolor="#2ecc71"
+          class="sc-khLCKb fiwGCz"
+          maxwidth="70%"
+          role="user"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Yes, please reschedule it for Friday.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-kLhKbu isVYmJ"
+        role="assistant"
+      >
+        <div
+          class="sc-dstKZu hfBukx"
+        >
+          <img
+            alt="chatbot-male"
+            class="sc-ghWlax ecyHSa"
+            src="/chatbot-male1.jpg"
+          />
+        </div>
+        <div
+          bgcolor="#ecf0f1"
+          class="sc-khLCKb kCTLXf"
+          maxwidth="70%"
+          role="assistant"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1  sc-blHHSb kbeHia css-o6iw90-MuiTypography-root"
+          >
+            Your delivery has been successfully rescheduled for Friday. You will receive a confirmation email shortly with the updated delivery details. If you have any other questions or need further assistance with anything else, feel free to ask. I'm here to help make sure everything goes smoothly for you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-dntaoT dwKZRT"
+    >
+      <div
+        class="sc-ivxoEo gIhqDK"
+      >
+        <input
+          value=""
+        />
+        <button
+          class="MuiButtonBase-root  MuiIconButton-root MuiIconButton-sizeSmall  css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  css-20bmp1-MuiSvgIcon-root"
+            data-testid="SendIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

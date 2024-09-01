@@ -22,9 +22,9 @@ export type ChatPanelProps = {
   children: AllowedChildren | AllowedChildren[] | React.ReactNode[];
 };
 
-export const ChatPanel = ({ children }: ChatPanelProps) => {
-  return <ChatContainer>{children}</ChatContainer>;
-};
+export const ChatPanel = ({ children }: ChatPanelProps) => (
+  <ChatContainer>{children}</ChatContainer>
+);
 
 ChatPanel.Header = Header;
 ChatPanel.Messages = Messages;
