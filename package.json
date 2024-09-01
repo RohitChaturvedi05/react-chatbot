@@ -27,6 +27,8 @@
   "license": "ISC",
   "devDependencies": {
     "@chromatic-com/storybook": "^1.8.0",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@storybook/addon-actions": "^8.2.9",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
