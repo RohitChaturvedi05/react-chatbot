@@ -20,6 +20,7 @@
     "start": "storybook dev -p 8000",
     "build-storybook": "storybook build",
     "release": "semantic-release --dry-run",
+    "commit": "cz",
     "copy-package-json": "sh ./scripts/copyPackageJson.sh"
   },
   "keywords": [],
@@ -45,6 +46,8 @@
     "@types/react": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -90,5 +93,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
