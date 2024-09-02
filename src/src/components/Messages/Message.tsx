@@ -62,11 +62,11 @@ export const Message = ({
   return (
     <MessageContainer
       ref={innerRef}
-      role={role}
-      isTitleVisible={isTitleVisible}
-      maxWidth={maxWidth}
-      bgColor={bgColor}
-      noTail={noTail}
+      $role={role}
+      $isTitleVisible={isTitleVisible}
+      $maxWidth={maxWidth}
+      $bgColor={bgColor}
+      $noTail={noTail}
     >
       {Content}
     </MessageContainer>

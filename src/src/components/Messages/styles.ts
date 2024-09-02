@@ -4,9 +4,9 @@ import { theme } from "../../theme";
 import { ChatRole } from "../../types";
 
 const RolesStyles = {
-  [ROLES.ASSISTANT]: css<{ inline?: boolean }>`
+  [ROLES.ASSISTANT]: css<{ $inline?: boolean }>`
     justify-content: flex-start;
-    ${({ inline }) => !inline && `flex-direction: column;`}
+    ${({ $inline }) => !$inline && `flex-direction: column;`}
   `,
   [ROLES.USER]: css`
     justify-content: flex-start;
@@ -16,12 +16,12 @@ const RolesStyles = {
 
 export const ChatContainer = styled.div<{
   role: ChatRole;
-  inline?: boolean;
+  $inline?: boolean;
 }>`
   display: flex;
   padding: ${theme.spacing.sm};
   gap: ${theme.spacing.sm};
-  ${({ inline }) => (inline ? "flex-direction: row" : "column")}
+  ${({ $inline }) => ($inline ? "flex-direction: row" : "column")}
   ${({ role }) => RolesStyles[role]}
 `;
 
@@ -31,6 +31,7 @@ export const MessagesContainer = styled.div`
   padding: ${theme.spacing.sm};
   gap: ${theme.spacing.sm};
   overflow: auto;
+  flex: 1;
 `;
 
 const TailPosition = {
@@ -70,10 +71,10 @@ const TailPosition = {
   `,
 };
 const Tail = css<{
-  maxWidth: string;
-  role: ChatRole;
-  bgColor?: string;
-  isTitleVisible?: boolean;
+  $maxWidth: string;
+  $role: ChatRole;
+  $bgColor?: string;
+  $isTitleVisible: boolean;
 }>`
   &::before {
     content: "";
@@ -81,23 +82,23 @@ const Tail = css<{
     transform: translateY(-50%);
     border-width: 10px;
     border-style: solid;
-    border-color: ${({ bgColor }) =>
-      `transparent ${bgColor} transparent transparent`};
+    border-color: ${({ $bgColor }) =>
+      `transparent ${$bgColor} transparent transparent`};
 
-    ${({ role, isTitleVisible }) => {
-      if (role === ROLES.ASSISTANT)
-        return isTitleVisible ? TailPosition.TopLeft : TailPosition.LeftTop;
+    ${({ $role, $isTitleVisible }) => {
+      if ($role === ROLES.ASSISTANT)
+        return $isTitleVisible ? TailPosition.TopLeft : TailPosition.LeftTop;
       return TailPosition.RightTop;
     }}
   }
 `;
 
 export const MessageContainer = styled.div<{
-  maxWidth: string;
-  role: ChatRole;
-  bgColor?: string;
-  isTitleVisible?: boolean;
-  noTail?: boolean;
+  $maxWidth: string;
+  $role: ChatRole;
+  $bgColor?: string;
+  $isTitleVisible: boolean;
+  $noTail?: boolean;
 }>`
   html {
     scroll-behavior: smooth;
@@ -106,14 +107,14 @@ export const MessageContainer = styled.div<{
   position: relative;
   align-items: center;
   padding: ${theme.spacing.sm};
-  background-color: ${({ bgColor }) => bgColor};
+  background-color: ${({ $bgColor }) => $bgColor};
   border-radius: ${theme.radius.sm};
-  max-width: ${({ maxWidth }) => maxWidth};
-  ${({ noTail }) => !noTail && Tail};
+  max-width: ${({ $maxWidth }) => $maxWidth};
+  ${({ $noTail }) => !$noTail && Tail};
 `;
 
-export const Title = styled.div<{ inline: boolean }>`
+export const Title = styled.div<{ $inline: boolean }>`
   display: flex;
   gap: ${theme.spacing.sm};
-  align-items: ${({ inline }) => (inline ? "center" : "flex-start")};
+  align-items: ${({ $inline }) => ($inline ? "center" : "flex-start")};
 `;

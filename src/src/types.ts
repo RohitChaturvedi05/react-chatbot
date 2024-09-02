@@ -63,7 +63,7 @@ export type AssistantMessage = {
 export type Message = UserMessage | AssistantMessage;
 export type Messages = Message[];
 
-export type MessagesProps = {
+export type MessagesProps = React.HTMLAttributes<HTMLDivElement> & {
   /** Avatars for different roles in the chat */
   avatars?: {
     /** Avatar for the assistant role */

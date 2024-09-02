@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React, { useState } from "react";
 import { ChatPanel } from "../src/components/ChatPanel";
 import { Logo } from "../src/components/Logo";
+import { Example } from "./Example";
 import { MockChats } from "./mockData";
 const meta: Meta<typeof ChatPanel> = {
   title: "ChatPanel",
@@ -37,5 +38,11 @@ export const Playground: Story = {
         <ChatPanel.Input onSubmit={onInputSubmit} />
       </ChatPanel>
     );
+  },
+};
+
+export const Examples: Story = {
+  render: () => {
+    return <Example />;
   },
 };

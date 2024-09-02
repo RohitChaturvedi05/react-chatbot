@@ -25,13 +25,14 @@ export const Messages: React.FC<MessagesProps> = ({
   messages,
   loading,
   onContentAction,
+  ...rest
 }) => (
-  <MessagesContainer>
+  <MessagesContainer {...rest}>
     {messages.map((message) => {
       const { id, content, role } = message;
       const shouldShowTitle = role === ROLES.ASSISTANT && !!message.title;
       return (
-        <ChatContainer inline={!shouldShowTitle} role={role} key={id}>
+        <ChatContainer $inline={!shouldShowTitle} role={role} key={id}>
           <MessageTitle
             avatar={avatars?.[role] ?? DefaultAvatar[role]}
             title={role === ROLES.ASSISTANT ? message.title : null}
@@ -48,7 +49,7 @@ export const Messages: React.FC<MessagesProps> = ({
       );
     })}
     {loading && (
-      <ChatContainer inline={true} role={ROLES.ASSISTANT}>
+      <ChatContainer $inline={true} role={ROLES.ASSISTANT}>
         <LoadingMessage
           isTitleVisible={false}
           role={ROLES.ASSISTANT}

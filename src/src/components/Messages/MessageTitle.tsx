@@ -7,7 +7,7 @@ export type MessageTitleProps = {
 };
 
 export const MessageTitle = ({ avatar, title }: MessageTitleProps) => (
-  <Title inline={!!title}>
+  <Title $inline={!!title}>
     {avatar}
     {title && (
       <Text fontSize="small" fontWeight="bold">
