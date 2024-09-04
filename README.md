@@ -27,3 +27,42 @@ npm i @rc-packages/react-chatbot
 ```bash
 yarn add @rc-packages/react-chatbot
 ```
+
+### Usage
+
+```tsx
+const ChatbotExample = () => {
+  const [isOpen, setOpen] = useState(false);
+  const [messages, updateMessage] = useState(MockChats);
+  const onInputSubmit = (message: string) => {
+    updateMessage((prev) => [
+      ...prev,
+      { id: prev.length + 1, role: "user", content: message },
+    ]);
+  };
+
+  return (
+    <div>
+      <button onClick={() => setOpen((val) => !val)}>Open</button>
+      {isOpen && (
+        <Chatbot onClose={() => setOpen(false)}>
+          <Chatbot.Header
+            title="Default Header"
+            logo={<Logo src="/logo.png" alt="company logo" />}
+          />
+          <Chatbot.Messages
+            avatars={{
+              assistant: <Logo src="/logo.png" alt="logo" />,
+              user: <Logo src="/person.png" alt="person" />,
+            }}
+            messages={messages}
+            maxWidth="70%"
+            onContentAction={action("onContentAction")}
+          />
+          <Chatbot.Input onSubmit={onInputSubmit} />
+        </Chatbot>
+      )}
+    </div>
+  );
+};
+```
