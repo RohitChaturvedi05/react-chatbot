@@ -23,7 +23,6 @@
     "commit": "cz",
     "copy-package-json": "sh ./scripts/copyPackageJson.sh"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -78,6 +77,17 @@
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.21.2"
   },
+  "keywords": [
+    "React",
+    "Chatbot",
+    "Chat Popup",
+    "AI Chatbot",
+    "Chatbot Component",
+    "AI-Powered Chatbot",
+    "Chatbot Integration",
+    "Custom Chatbot for React",
+    "React Chatbot Widget for Websites"
+  ],
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
