@@ -10,6 +10,14 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-actions",
     "storybook-addon-rtl",
+    "storybook-addon-themes",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        csfPluginOptions: null,
+        mdxPluginOptions: {},
+      },
+    },
   ],
   framework: {
     name: "@storybook/react-vite",

@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { theme } from "../theme";
 
 export const LogoStyled = styled.img`
   width: 40px;
   height: 40px;
-  border-radius: ${theme.radius.circle};
+  border-radius: ${(props) => props.theme.radius.circle};
   object-fit: cover;
 `;
 

@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import MuiList from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import React from "react";
 import { Text } from "../Text";
 
 interface ListProps {
@@ -9,7 +8,7 @@ interface ListProps {
   items: string[];
 }
 
-export const List: React.FC<ListProps> = ({ title, items }) => {
+export const List = ({ title, items }: ListProps) => {
   return (
     <Box>
       <Text fontSize="small">{title}</Text>

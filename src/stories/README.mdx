@@ -1,0 +1,34 @@
+import { Controls, Meta, Story, Canvas, Markdown } from "@storybook/blocks";
+import { Chatbot } from "../src/components/Chatbot";
+import * as ChatbotStories from "./Chatbot.stories";
+import * as HeaderStories from "./Header.stories";
+import * as MessagesStories from "./Messages.stories";
+import * as InputStories from "./Input.stories";
+
+import Readme from "../../README.md?raw";
+
+<Meta title="Chat Panel" of={ChatbotStories} />
+
+<Markdown>{Readme}</Markdown>
+
+<Canvas>
+  <Story of={ChatbotStories.Playground} />
+</Canvas>
+
+# Props
+
+### Props of `<Chatbot>`
+
+<Controls of={ChatbotStories.Playground} />
+
+### Props of `<Chatbot.Header>`
+
+<Controls of={HeaderStories.Playground} />
+
+### Props of `<Chatbot.Messages>`
+
+<Controls of={MessagesStories.Playground} />
+
+### Props of `<Chatbot.Input>`
+
+<Controls of={InputStories.Playground} />

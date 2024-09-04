@@ -1,24 +1,18 @@
 import CloseIcon from "@mui/icons-material/Close";
-import React from "react";
+import { useChatContext } from "../../hooks/useChatContext";
+import { HeaderProps } from "../../types";
+import { Button } from "../Button";
 import { Text } from "../Text";
-import { CloseBtn, HeaderContainer, Logo } from "./styles";
+import { HeaderContainer, Logo } from "./styles";
 
-export type HeaderProps = React.HTMLAttributes<HTMLDivElement> & {
-  padding?: string;
-  minHeight?: string;
-  logo?: React.ReactNode;
-  title?: React.ReactNode;
-  onClose: () => void;
-};
-
-export const Header: React.FC<HeaderProps> = ({
+export const Header = ({
   padding,
   minHeight,
   logo,
   title,
-  onClose,
   ...rest
-}) => {
+}: HeaderProps) => {
+  const { onClose } = useChatContext();
   return (
     <HeaderContainer padding={padding} minHeight={minHeight} {...rest}>
       {logo && <Logo>{logo}</Logo>}
@@ -30,9 +24,12 @@ export const Header: React.FC<HeaderProps> = ({
         title
       )}
 
-      <CloseBtn aria-label="close" onClick={onClose}>
+      {/* <CloseBtn aria-label="close" onClick={onClose}>
         <CloseIcon />
-      </CloseBtn>
+      </CloseBtn> */}
+      <Button $type="secondary" $displayStyle="iconButton" onClick={onClose}>
+        <CloseIcon />
+      </Button>
     </HeaderContainer>
   );
 };

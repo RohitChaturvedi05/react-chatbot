@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { ROLES } from "../../constants";
-import { theme } from "../../theme";
 import { ChatRole } from "../../types";
 
 const RolesStyles = {
@@ -19,8 +18,8 @@ export const ChatContainer = styled.div<{
   $inline?: boolean;
 }>`
   display: flex;
-  padding: ${theme.spacing.sm};
-  gap: ${theme.spacing.sm};
+  padding: ${(props) => props.theme.spacing.sm};
+  gap: ${(props) => props.theme.spacing.sm};
   ${({ $inline }) => ($inline ? "flex-direction: row" : "column")}
   ${({ role }) => RolesStyles[role]}
 `;
@@ -28,10 +27,11 @@ export const ChatContainer = styled.div<{
 export const MessagesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: ${theme.spacing.sm};
-  gap: ${theme.spacing.sm};
+  padding: ${(props) => props.theme.spacing.sm};
+  gap: ${(props) => props.theme.spacing.sm};
   overflow: auto;
   flex: 1;
+  background-color: ${(props) => props.theme.pallet.background.main};
 `;
 
 const TailPosition = {
@@ -82,8 +82,13 @@ const Tail = css<{
     transform: translateY(-50%);
     border-width: 10px;
     border-style: solid;
-    border-color: ${({ $bgColor }) =>
-      `transparent ${$bgColor} transparent transparent`};
+    border-color: ${(props) => {
+      const color =
+        props.$role === ROLES.ASSISTANT
+          ? props.theme.pallet.background.light
+          : props.theme.pallet.primary.main;
+      return `transparent ${color} transparent transparent`;
+    }};
 
     ${({ $role, $isTitleVisible }) => {
       if ($role === ROLES.ASSISTANT)
@@ -92,7 +97,17 @@ const Tail = css<{
     }}
   }
 `;
-
+const rolesColors = {
+  [ROLES.ASSISTANT]: css`
+    background: ${(props) => props.theme.pallet.background.light};
+    color: ${(props) => props.theme.pallet.background.text};
+    border: 1px solid ${(props) => props.theme.pallet.divider};
+  `,
+  [ROLES.USER]: css`
+    background: ${(props) => props.theme.pallet.primary.main};
+    color: ${(props) => props.theme.pallet.primary.text};
+  `,
+};
 export const MessageContainer = styled.div<{
   $maxWidth: string;
   $role: ChatRole;
@@ -106,15 +121,16 @@ export const MessageContainer = styled.div<{
   display: flex;
   position: relative;
   align-items: center;
-  padding: ${theme.spacing.sm};
-  background-color: ${({ $bgColor }) => $bgColor};
-  border-radius: ${theme.radius.sm};
+  padding: ${(props) => props.theme.spacing.sm};
+  /* background-color: ${({ $bgColor }) => $bgColor}; */
+  border-radius: ${(props) => props.theme.radius.sm};
   max-width: ${({ $maxWidth }) => $maxWidth};
   ${({ $noTail }) => !$noTail && Tail};
+  ${({ $role }) => rolesColors[$role]};
 `;
 
 export const Title = styled.div<{ $inline: boolean }>`
   display: flex;
-  gap: ${theme.spacing.sm};
+  gap: ${(props) => props.theme.spacing.sm};
   align-items: ${({ $inline }) => ($inline ? "center" : "flex-start")};
 `;

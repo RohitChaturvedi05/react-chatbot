@@ -1,37 +1,35 @@
 import SendIcon from "@mui/icons-material/Send";
-import IconButton from "@mui/material/IconButton";
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
-import { theme } from "../theme";
-
-export type InputProps = {
-  icon?: React.ReactNode;
-  onSubmit: (value: string) => void;
-};
+import { InputProps } from "../types";
+import { Button } from "./Button";
 
 const Footer = styled.div`
-  padding: ${theme.spacing.sm};
+  padding: ${(props) => props.theme.spacing.sm};
+  background-color: ${(props) => props.theme.pallet.background.dark};
 `;
 const InputContainer = styled.div`
   display: flex;
   flex-direction: row;
-  border-radius: ${theme.radius.sm};
-  border: 1px solid ${theme.colors.primary};
+  border-radius: ${(props) => props.theme.spacing.sm};
+  gap: ${(props) => props.theme.spacing.sm};
   input {
     width: 100%;
-    border-radius: ${theme.radius.sm};
-    padding: ${theme.spacing.sm};
+    padding: ${(props) => props.theme.spacing.sm};
     border: none;
-  }
-  button {
-    color: ${theme.colors.primary};
-    [dir="rtl"] & {
-      transform: rotate(180deg);
-    }
+    background-color: ${(props) => props.theme.pallet.background.main};
+    color: ${(props) => props.theme.pallet.background.text};
   }
 `;
 
-export const Input: React.FC<InputProps> = ({ icon, onSubmit }) => {
+export const Input = ({
+  icon,
+  placeholder = "Type your message...",
+  buttonLabel = "Send",
+  onSubmit,
+  onKeyDown,
+  ...rest
+}: InputProps) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = () => {
@@ -45,17 +43,25 @@ export const Input: React.FC<InputProps> = ({ icon, onSubmit }) => {
     <Footer>
       <InputContainer>
         <input
+          placeholder={placeholder}
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleSubmit();
             }
+            if (onKeyDown) onKeyDown(e);
           }}
+          {...rest}
         />
-        <IconButton onClick={handleSubmit} size="small">
-          {icon ?? <SendIcon />}
-        </IconButton>
+        <Button
+          $type="primary"
+          $displayStyle="outline"
+          onClick={handleSubmit}
+          aria-label="Send message"
+        >
+          {buttonLabel} {icon ?? <SendIcon />}
+        </Button>
       </InputContainer>
     </Footer>
   );

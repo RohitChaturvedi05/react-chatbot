@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Text } from "../Text";
 import { ChipStyled } from "./styles";
 
@@ -14,7 +14,7 @@ interface QuizProps {
   onSelect: (selectedId: string) => void;
 }
 
-export const Quiz: React.FC<QuizProps> = ({ question, options, onSelect }) => {
+export const Quiz = ({ question, options, onSelect }: QuizProps) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
   const handleOptionClick = (id: string) => {

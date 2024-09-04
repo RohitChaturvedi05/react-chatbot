@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { Messages } from "../src/components/Messages";
 import { MockChats } from "./mockData";
 const meta: Meta<typeof Messages> = {

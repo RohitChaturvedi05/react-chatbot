@@ -1,6 +1,5 @@
 import IconButton from "@mui/material/IconButton";
 import styled from "styled-components";
-import { theme } from "../../theme";
 
 export const HeaderContainer = styled.header<{
   padding?: string;
@@ -8,12 +7,12 @@ export const HeaderContainer = styled.header<{
 }>`
   display: flex;
   align-items: center;
-  background-color: ${theme.colors.background};
-  gap: ${theme.spacing.sm};
-  border-radius: ${theme.radius.sm} ${theme.radius.sm} 0 0;
-  border-bottom: 1px solid ${theme.colors.divider};
-  padding: ${({ padding = theme.spacing.sm }) => padding};
-  min-height: ${({ minHeight = "auto" }) => minHeight};
+  background-color: ${(props) => props.theme.pallet.background.dark};
+  color: ${(props) => props.theme.pallet.background.text};
+  gap: ${(props) => props.theme.spacing.sm};
+  border-bottom: 1px solid ${(props) => props.theme.pallet.divider};
+  padding: ${({ padding }) => padding};
+  min-height: ${({ minHeight = "70px" }) => minHeight};
 `;
 
 export const Logo = styled.div`
@@ -25,8 +24,8 @@ export const Logo = styled.div`
 `;
 
 export const CloseBtn = styled(IconButton)`
+  color: ${(props) => props.theme.pallet.background.text}!important;
   margin-left: auto !important;
-
   [dir="rtl"] && {
     margin-left: unset;
     margin-right: auto !important;

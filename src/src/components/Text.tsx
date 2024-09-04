@@ -10,5 +10,5 @@ const TypographyStyled = styled(Typography)`
 export type TextProps = TypographyProps & {};
 
 export const Text = ({ ...props }: TextProps) => (
-  <TypographyStyled {...props} />
+  <TypographyStyled fontWeight="lighter" {...props} />
 );

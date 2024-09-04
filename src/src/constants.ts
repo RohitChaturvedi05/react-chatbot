@@ -12,3 +12,5 @@ export const WIDGET = {
   QUIZ: "quiz",
   LIST: "list",
 } as const;
+
+export const NOOP = () => null;

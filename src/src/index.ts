@@ -1,1 +1,1 @@
-export * from "./components/ChatPanel";
+export * from "./components/Chatbot";
