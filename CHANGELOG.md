@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/RohitChaturvedi05/react-chatbot/compare/v1.1.0...v1.1.1) (2024-09-09)
+
+
+### Bug Fixes
+
+* **types:** export types for chatbot ([baa1a3f](https://github.com/RohitChaturvedi05/react-chatbot/commit/baa1a3fd9c4778c67039358c96e774bcdae6c340))
+
 # [1.1.0](https://github.com/RohitChaturvedi05/react-chatbot/compare/v1.0.0...v1.1.0) (2024-09-04)
 
 
