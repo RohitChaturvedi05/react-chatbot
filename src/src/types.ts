@@ -106,6 +106,8 @@ export type MessagesProps = React.HTMLAttributes<HTMLDivElement> & {
   maxWidth?: string;
   /** Indicates if the chat is in a loading state, Default `false` */
   loading?: boolean;
+  /* Flag to hide the tail of the message bubble, Default `false` */
+  noTail?: boolean;
   /* Function to handle actions triggered by content */
   onContentAction?: <T>(content: Content, value: T) => void;
 };

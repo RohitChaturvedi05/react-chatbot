@@ -1,21 +1,16 @@
 import { ROLES } from "../../constants";
 import { MessagesProps } from "../../types";
-import { Logo } from "../Logo";
 import { LoadingMessage } from "./LoadingMessage";
 import { Message } from "./Message";
 import { MessageTitle } from "./MessageTitle";
 import { ChatContainer, MessagesContainer } from "./styles";
-
-const DefaultAvatar = {
-  [ROLES.ASSISTANT]: <Logo src="/logo.png" alt="chatbot-male" />,
-  [ROLES.USER]: <Logo src="/person.png" alt="person-female" />,
-};
 
 export const Messages = ({
   avatars,
   maxWidth,
   messages,
   loading,
+  noTail,
   onContentAction,
   ...rest
 }: MessagesProps) => (
@@ -26,7 +21,7 @@ export const Messages = ({
       return (
         <ChatContainer $inline={!shouldShowTitle} role={role} key={id}>
           <MessageTitle
-            avatar={avatars?.[role] ?? DefaultAvatar[role]}
+            avatar={avatars?.[role]}
             title={role === ROLES.ASSISTANT ? message.title : null}
           />
           <Message
@@ -34,6 +29,7 @@ export const Messages = ({
             role={role}
             content={content}
             maxWidth={maxWidth}
+            noTail={noTail}
             // bgColor={colors?.[role] ?? DefaultBubbleColors[role]}
             onContentAction={onContentAction}
           />

@@ -10,6 +10,10 @@ import { Logo } from "../src/components/Logo";
 import { ChatbotProps, Messages } from "../src/types";
 import { MockChats } from "./mockData";
 
+const avatars = {
+  assistant: <Logo src="/logo.png" alt="logo" />,
+  user: <Logo src="/person.png" alt="person" />,
+};
 export const ChatbotExample = (props: ChatbotProps) => {
   const [messages, updateMessage] = useState(MockChats);
   const onInputSubmit = (message: string) => {
@@ -26,10 +30,7 @@ export const ChatbotExample = (props: ChatbotProps) => {
         logo={<Logo src="/logo.png" alt="company logo" />}
       />
       <Chatbot.Messages
-        avatars={{
-          assistant: <Logo src="/logo.png" alt="logo" />,
-          user: <Logo src="/person.png" alt="person" />,
-        }}
+        avatars={avatars}
         messages={messages}
         maxWidth="70%"
         onContentAction={action("onContentAction")}
@@ -78,6 +79,7 @@ export const Example = (props: ChatbotProps) => {
             logo={<Logo src="/logo.png" alt="logo" />}
           />
           <Chatbot.Messages
+            avatars={avatars}
             messages={messages}
             maxWidth="70%"
             onContentAction={action("onContentAction")}
@@ -130,6 +132,7 @@ export const DrawerExample = (props: ChatbotProps) => {
               logo={<Logo src="/logo.png" alt="logo" />}
             />
             <Chatbot.Messages
+              avatars={avatars}
               messages={messages}
               maxWidth="70%"
               onContentAction={action("onContentAction")}
