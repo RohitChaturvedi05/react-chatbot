@@ -3,7 +3,7 @@
 exports[`Chatbot > renders correctly with children 1`] = `
 <DocumentFragment>
   <div
-    class="sc-jwIPbr jfLYje"
+    class="sc-dpBQxM oHChs"
     height="100vh"
     width="auto"
   >
@@ -15,7 +15,7 @@ exports[`Chatbot > renders correctly with children 1`] = `
       >
         <img
           alt="chatbot-male"
-          class="sc-kLhKbu iIHqBZ"
+          class="sc-jwIPbr bgGhze"
           src="/chatbot-male.png"
         />
       </div>
@@ -41,23 +41,17 @@ exports[`Chatbot > renders correctly with children 1`] = `
       </button>
     </header>
     <div
-      class="sc-khLCKb fuEqgz"
+      class="sc-ixGGxD jpaJcb"
     >
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -67,20 +61,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD hVMjPY"
+        class="sc-kLhKbu icVAgW"
         role="user"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="person-female"
-            class="sc-kLhKbu iIHqBZ"
-            src="/person.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu cpwsRO"
+          class="sc-khLCKb fsyWtk"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -90,20 +78,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -113,20 +95,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD hVMjPY"
+        class="sc-kLhKbu icVAgW"
         role="user"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="person-female"
-            class="sc-kLhKbu iIHqBZ"
-            src="/person.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu cpwsRO"
+          class="sc-khLCKb fsyWtk"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -136,20 +112,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -159,20 +129,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -182,20 +146,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD hVMjPY"
+        class="sc-kLhKbu icVAgW"
         role="user"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="person-female"
-            class="sc-kLhKbu iIHqBZ"
-            src="/person.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu cpwsRO"
+          class="sc-khLCKb fsyWtk"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -205,20 +163,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -228,20 +180,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD hVMjPY"
+        class="sc-kLhKbu icVAgW"
         role="user"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="person-female"
-            class="sc-kLhKbu iIHqBZ"
-            src="/person.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu cpwsRO"
+          class="sc-khLCKb fsyWtk"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
@@ -251,20 +197,14 @@ exports[`Chatbot > renders correctly with children 1`] = `
         </div>
       </div>
       <div
-        class="sc-ixGGxD kXPiip"
+        class="sc-kLhKbu iAjnur"
         role="assistant"
       >
         <div
-          class="sc-keTIit iSDpTt"
-        >
-          <img
-            alt="chatbot-male"
-            class="sc-kLhKbu iIHqBZ"
-            src="/logo.png"
-          />
-        </div>
+          class="sc-dstKZu HWmsM"
+        />
         <div
-          class="sc-dstKZu djYSLX"
+          class="sc-khLCKb qDrqh"
         >
           <p
             class="MuiTypography-root MuiTypography-body1  sc-gtLWhw kLKHwq css-mwd914-MuiTypography-root"
