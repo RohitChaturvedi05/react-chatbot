@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/RohitChaturvedi05/react-chatbot/compare/v1.1.1...v1.1.2) (2024-09-09)
+
+
+### Bug Fixes
+
+* add types, avatar, and notail prop on messages ([801b7c0](https://github.com/RohitChaturvedi05/react-chatbot/commit/801b7c070ba3a5cef9ba2c23a3e906e022049037))
+
 ## [1.1.1](https://github.com/RohitChaturvedi05/react-chatbot/compare/v1.1.0...v1.1.1) (2024-09-09)
 
 
